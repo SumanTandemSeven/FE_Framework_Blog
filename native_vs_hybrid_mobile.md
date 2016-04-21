@@ -2,24 +2,24 @@
 
 ## Comparison Chart:
 
-| No  | Functionality                                      | Native | Web  | Hybrid |
-| --- | :---                                               | :---   | :--- | :---   |
-| 1   | Tapping into the device hardware capability        | 5      | 2    | 4      |
-| 2   | Computational Power                                | 5      | 3    | 5      |
-| 3   | Local Storage, Offline Capability                  | 5      | 3    | 4      |
-| 4   | User Experience, User Interaction & Personlization | 5      | 4    | 4      |
-| 5   | Responsive Design                                  | 2      | 5    | 5      |
-| 6   | Monetization                                       | 3      | 4    | 3      |
-| 7   | Time to Market, Approvals in App-stores            | 3      | 5    | 3      |
-| 8   | Application Update Frequency                       | 3      | 5    | 3      |
-| 9   | Dsicoverability, SEO, Application Reach            | 3      | 5    | 3      |
-| 10  | Internationalization & Localization                | 5      | 5    | 5      |
-| 11  | Prototyping Options                                | 5      | 4    | 4      |
-| 12  | Charts & Graphs                                    | 3      | 5    | 4      |
-| 13  | Platform Independence                              | 2      | 5    | 4      |
-| 14  | Gaming Applications                                | 5      | 3    | 4      |
-| 15  | Development Cost                                   | 3      | 5    | 4      |
-| 16  | Open Source Contribution & 3rd Party Framework     | 3      | 5    | 5      |
+| No  | Functionality                                      | Native [n/5] | Web [n/5] | Hybrid [n/5] |
+| --- | :---                                               | :---         | :---      | :---         |
+| 1   | Tapping into the device hardware capability        | 5            | 2         | 4            |
+| 2   | Computational Power                                | 5            | 3         | 5            |
+| 3   | Local Storage, Offline Capability                  | 5            | 3         | 4            |
+| 4   | User Experience, User Interaction & Personlization | 5            | 4         | 4            |
+| 5   | Responsive Design                                  | 2            | 5         | 5            |
+| 6   | Monetization                                       | 3            | 4         | 3            |
+| 7   | Time to Market, Approvals in App-stores            | 3            | 5         | 3            |
+| 8   | Application Update Frequency                       | 3            | 5         | 3            |
+| 9   | Dsicoverability, SEO, Application Reach            | 3            | 5         | 3            |
+| 10  | Internationalization & Localization                | 5            | 5         | 5            |
+| 11  | Prototyping Options                                | 5            | 4         | 4            |
+| 12  | Charts & Graphs                                    | 3            | 5         | 4            |
+| 13  | Platform Independence                              | 2            | 5         | 4            |
+| 14  | Gaming Applications                                | 5            | 3         | 4            |
+| 15  | Development Cost                                   | 3            | 5         | 4            |
+| 16  | Open Source Contribution & 3rd Party Framework     | 3            | 5         | 5            |
 
 ## Notes on each of the items in the comparison chart:
   1. Tapping into the device hardware capability
@@ -64,8 +64,15 @@
   7. Time to Market, Approvals in App-stores
     - Responsive-web - quickest time to market since it doesn't have to go
       through any app-store approvals
+    - Hybrid and native - can take significantly longer due to the
+      approval process.
+      + Apple's guidelines are the most stringent
   8. Application Update Frequency
+    - similar to time to market
   9. Dsicoverability, SEO, Application Reach
+    - native and hybrid apps are closed environments and cannot be crawled
+      by search engines
+    - responsive-web have a much wider reach and bigger audience
   10. Internationalization & Localization
   11. Prototyping Options
   12. Charts & Graphs
