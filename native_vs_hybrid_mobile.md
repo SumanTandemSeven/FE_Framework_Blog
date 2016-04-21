@@ -1,10 +1,5 @@
 # Blog Post: How to select the correct architecture for your next enterprise mobile application
 
-## Research
-
-  + [HTML5 is Quietly Changing the App Landscape](http://goo.gl/XJO0MV)
-  + [The Beauty of React Native](https://goo.gl/vXAI5i)
-
 ## Comparison Chart:
 
 | No  | Functionality                                      | Native | Web  | Hybrid |
@@ -21,10 +16,63 @@
 | 10  | Internationalization & Localization                | 5      | 5    | 5      |
 | 11  | Prototyping Options                                | 5      | 4    | 4      |
 | 12  | Charts & Graphs                                    | 3      | 5    | 4      |
-| 13  | Platform Independence                              | 2      | 5    | 3      |
-| 14  | Gaming Applications                                | 5      | 3    | 3      |
+| 13  | Platform Independence                              | 2      | 5    | 4      |
+| 14  | Gaming Applications                                | 5      | 3    | 4      |
 | 15  | Development Cost                                   | 3      | 5    | 4      |
-| 16  | Open Source Contribution & 3rd Party Framework     | 3      | 5    | 4      |
+| 16  | Open Source Contribution & 3rd Party Framework     | 3      | 5    | 5      |
+
+## Notes on each of the items in the comparison chart:
+  1. Tapping into the device hardware capability
+    - accessing the camera
+    - bluetooth connectivity
+    - GPS
+    - scanning
+    - accelerometer
+    - photo library
+    - Native apps give full access to the latest and greatest device features
+  2. Computational Power
+    - Apps that require more computational power (i.e. photo processing,
+      gaming) are better suited for native apps
+    - responsive-web apps suffer the most in this category since it's
+      dependent on the web browser.
+      + both UI and the business logic run on the same thread
+    - hybrid apps:
+      + embedded webview hybrid apps have the same issue as responsive-web
+        app
+      + react-native and titanium have multi-threading built in
+  3. Local Storage, Offline Capability
+    - Native/Hybrid: core data, local db, sqlite
+    - responsive-web: application cache, local storage, session storage
+  4. User Experience, User Interaction & Personlization
+    - Gestures like zoom, pan, scoll, swipe are better and smoother in
+      native and hybrid apps
+    - responsive-web and embeded hybrid apps are limited by the capability
+      of a web browser
+    - rendering large amount of tabular data can hinder performance for
+      responsive-web app due to the UI and business logic being on the
+      same thread
+  5. Responsive Design
+    - Biggest advantage for responsive-web apps
+    - One code base that can accommodate multiple screen sizes and
+      platforms
+    - large number of css frameworks are available such as bootstrap, 960
+      Grid, Susy, etc.
+  6. Monetization
+    - Native and hybrid - monetization opportunities thru app store or
+      in-app purchase
+    - responsive-web - advertisements and subscriptions
+  7. Time to Market, Approvals in App-stores
+    - Responsive-web - quickest time to market since it doesn't have to go
+      through any app-store approvals
+  8. Application Update Frequency
+  9. Dsicoverability, SEO, Application Reach
+  10. Internationalization & Localization
+  11. Prototyping Options
+  12. Charts & Graphs
+  13. Platform Independence
+  14. Gaming Applications
+  15. Development Cost
+  16. Open Source Contribution & 3rd Party Framework
 
 ## Quick descriptions on each type:
 
@@ -38,11 +86,11 @@
   + Has to be built for specific screen sizes
     - more difficult for Android because of all the different devices
     - easier to handle for iOS due to Apple's hardware control
-  + requires having devs with platform specific skills
+  + requires devs that have obj-c/swift/java/c++ skills
 
 #### Web Responsive Applications
   + Works in web or mobile-web browser
-  + Primarily built with HTML5/CSS/JS
+  + primarily built with HTML5/CSS/JS
   + Requires web browser to run
   + Fastest time-to-market
   + can mimic the look of a native app
@@ -50,47 +98,19 @@
 
 #### Hybrid Applications
   + cross platform
-  + same skills as web development
+  + primarily built with HTML5/CSS/JS
+  + same time to market as native - dependent on app store approvals
   + Two major different types of hybrid apps
-    - Browser wrapped within a native app
+    - Embedded webview in a native wrapper
+      + phonegap
+      + ionic
     - Native components with API's that are accessible to JS
+      + react-native
+      + titanium
+      + xamarin
 
-## TODO:
-  - [x] include comparison chart
-  - [ ] example of react and react-native
+## Research
+  + [HTML5 is Quietly Changing the App Landscape](http://goo.gl/XJO0MV)
+  + [The Beauty of React Native](https://goo.gl/vXAI5i)
+  + [Ionic vs React-Native](https://goo.gl/7ry802)
 
-
-## Meeting 1 notes:
-  + Topic: What's the right architecture for experience (mobile, native, hybrid app)
-  + Who: CIO, CTO, Chief Architect, head front-end dev
-  + Native vs hybrid vs adaptive FE frameworks - What's the best approach?
-  + Native applications have their place. If your organization is complex
-    and has a fully staffed IT group, that helps (list other
-    characteristics where native qualifies)
-  + Hybrid applications such as React native have changed the decision
-    process for selecting a technology approach for delivering
-    multi-channel applications. Angular, language like Swift, reduce the
-    compromise for mlti-channel approach.
-  + Why go with hybrid applications
-    - speed to market
-    - cost-saving benefit for the client
-    - adoption to feedback
-    - flexible architecture
-    - leverage in-house experience
-    - as js matures, you can build full-fledged applications
-  + How you can get started to make sure you see the efficiencies when
-    developing for desktop and mobile
-  + _List steps, provide example_
-  + Things to factor in the decision making:
-    - Does it need access sto GPS?
-    - Is it more data centric?
-    - Are the existing backend restful?
-  + What's T7's perspective?
-  + React native has changed the decision process for selecting
-    a technology approach for delivering multi-channel applications.
-  + Angular, Swift, reduce the compromise for multi-channel approach. How
-    we would help them.
-  + What we can or can't do with js-based framework, responsive app, etc.
-  + How you can get started to make sure you see the efficiencies when
-    developing for desktop & mobile
-  + Example of clints
